@@ -9,12 +9,15 @@ const Header = () => {
 	return (
 		<div className='top-0 bg-white h-20 w-full py-5 px-5 lg:px-10 items-center flex border-b border-gray-400/10
 			justify-between fixed z-50'>
-			<NavLink
-				to={homeLink}
-				className='inline-flex items-center text-blue-500 font-semibold'>
+			<a
+				href='https://building-drive.com'
+				className='inline-flex items-center text-blue-500 font-semibold hover:no-underline hover:text-yellow-500 transition duration-300 ease-in-out'>
 				<img src={logo} alt="Building Drive" className='h-16' />
-				<h3 className='hidden md:flex'>BUILDING DRIVE</h3>
-			</NavLink>
+				<div>
+					<h3 className='tracking-widest'>BUILDING DRIVE</h3>
+					<p className='text-xs uppercase -tracking-widest'>location saisonniere-conciergerie et nettoyage</p>
+				</div>
+			</a>
 
 			<div className='flex items-center'>
 				<NavLink to='/'
